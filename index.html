@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0082C9">
+  <meta name="description" content="Barriguda Web TV — portal de divulgação, transmissão ao vivo e redes sociais.">
+  <title>Barriguda Web TV</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Ir para a página inicial">
+        <span class="brand-logo-wrap"><img id="brand-logo" src="assets/img/logo-barriguda-webtv-radio.png" alt="Barriguda Web TV"></span>
+        <span class="brand-copy"><strong id="brand-name">Barriguda</strong><small id="brand-subtitle">WEB TV</small></span>
+      </a>
+
+      <button id="menu-toggle" class="icon-btn mobile-only" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+        <a href="#home" data-route="home">Home</a>
+        <a href="#contato" data-route="contato">Contato</a>
+        <a href="#redes" data-route="redes">Redes Sociais</a>
+        <a href="#fotos" data-route="fotos">Fotos</a>
+        <a href="#live" data-route="live" class="nav-live"><span class="live-dot"></span> Live</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Alternar tema" title="Alternar tema">☾</button>
+      </div>
+    </header>
+
+    <main id="view" class="page"></main>
+
+    <footer class="footer">
+      <div class="footer-main">
+        <div>
+          <div class="footer-brand"><span class="footer-mark">B</span><span><strong>Barriguda Web TV</strong><small>Comunicação, informação e transmissão.</small></span></div>
+          <p class="footer-description">Portal estático e responsivo para divulgação da emissora, programação, fotos, contatos e transmissões.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a><a href="#redes">Redes Sociais</a><a href="#fotos">Fotos</a><a href="#live">Live</a><a href="#contato">Contato</a>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="year"></span> Barriguda Web TV</span><span>HTML5 · CSS3 · JavaScript · LocalStorage</span></div>
+    </footer>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="js/app.bundle.js"></script>
+</body>
+</html>
